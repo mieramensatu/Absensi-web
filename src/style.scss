@@ -1,6 +1,6 @@
 body {
   background-color: #f5f3ee;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-optical-sizing: auto;
   margin: 0;
   --sb-size: 0px;
@@ -109,54 +109,60 @@ nav {
 #home {
   margin-top: 80px;
 
-  .main-container {
-    background-color: #0f393b;
-    height: 45rem;
-    border-radius: 0 0 20px 20px;
+  .hero-container {
+    height: 41rem;
+    overflow: hidden;
     display: flex;
 
-    .content-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(5px) brightness(50%);
+      z-index: -1;
+    }
+
+    .container {
+      width: 50rem;
       margin: auto;
-      width: 70rem;
-      margin-bottom: 10rem;
-      .text-content {
-        color: white;
+      text-align: center;
 
-        .head {
-          color: #ef8451;
-          font-weight: 700;
-        }
-        .center {
-          font-size: 60px;
-          margin: -10px 0;
-
-          span {
-            color: #ef8451;
-          }
-        }
-        button {
-          border: 1px solid #ef8451;
-          background-color: transparent;
-          color: #ef8451;
-          padding: 18px;
-          border-radius: 90px;
-          font-size: 15px;
-          margin-top: 10px;
-          font-weight: 800;
-          cursor: pointer;
-
-          &:hover {
-            background-color: #ef8451;
-            color: #fff;
-            transition: 0.3s ease-in-out;
-          }
-        }
+      h3 {
+        color: #ef8451;
       }
-      .img-container {
-        text-align: center;
+
+      h1 {
+        font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+        margin: -10px 0;
+        color: white;
+        font-size: 4rem;
+      }
+      p {
+        color: white;
+        margin: 20px 0;
+        font-family: "Nanum Myeongjo", Georgia, "Times New Roman", serif;
+        line-height: 1.5;
+      }
+      button {
+        color: #ffffff;
+        border-width: 0px;
+        border-radius: 37px;
+        font-size: 14px;
+        font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif !important;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: #ef8451;
+        padding: 14px 22px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.9;
+          background-color: #ef7451;
+          transition: 0.5s;
+        }
       }
     }
   }
@@ -165,10 +171,121 @@ nav {
     width: 70rem;
     margin: auto;
 
+    .card-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: #2a6355;
+      padding: 5rem;
+      border-radius: 50px 50px;
+      position: relative;
+      margin-top: -60px;
+
+      .left-text {
+        padding-right: 50px;
+        color: white;
+
+        h4 {
+          color: #ef8451;
+          margin: -1em 0;
+        }
+
+        h1 {
+          font-size: 50px;
+          margin: 20px 0;
+        }
+
+        p {
+          font-family: "Nanum Myeongjo", Georgia, "Times New Roman", serif;
+          text-align: justify;
+          line-height: 1.8em;
+        }
+      }
+
+      .right-card {
+        background-color: white;
+        border-radius: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .right-text {
+          padding: 10px 30px;
+          color: #093532;
+          font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+          text-align: center;
+          line-height: 1.8em;
+
+          button {
+            color: #ffffff;
+            border-width: 0px;
+            border-radius: 37px;
+            font-size: 14px;
+            font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif !important;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: #ef8451;
+            padding: 14px 22px;
+            cursor: pointer;
+            bottom: 0;
+
+            &:hover {
+              opacity: 0.9;
+              background-color: #ef7451;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .video-container {
+    text-align: center;
+    margin: 30px 0 60px 0;
+    border-radius: 90px;
+    border: 5px solid red($color: #000000);
+
+    iframe {
+      width: 70rem;
+      height: 35rem;
+      border-radius: 30px;
+    }
+  }
+
+  .introduction-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 30px auto;
+    width: 70rem;
+
+    .content {
+      padding: 1em;
+      margin: 1em;
+
+      i {
+        font-size: 35px;
+        color: #347362;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        color: #6b8483;
+      }
+    }
+  }
+
+  .card1-container {
+    width: 70rem;
+    margin: 60px auto;
+
     .content-container {
       grid-template-rows: repeat(3, 1fr);
 
-      .card-content {
+      .card1-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3em;
@@ -176,8 +293,6 @@ nav {
         .card1 {
           background-color: #ef8451;
           border-radius: 20px;
-          top: -48px;
-          position: relative;
           padding: 2em;
 
           p {
@@ -210,8 +325,6 @@ nav {
         .card2 {
           background-color: #124c51;
           border-radius: 20px;
-          top: -48px;
-          position: relative;
           padding: 2em;
 
           p {
@@ -244,30 +357,96 @@ nav {
     }
   }
 
-  .introduction-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    margin: 2em 0;
+  .footer-container {
+    background-color: #093532;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
 
-    .content {
-      background-color: white;
-      padding: 1em;
-      margin: 1em;
-      border-radius: 30px;
+    .footer-content {
+      text-align: center;
+      padding: 50px 0;
+      margin: auto;
+      width: 70%;
 
-      .image {
+      h1 {
+        color: white;
+        font-size: 50px;
+        line-height: 1.15em;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.1em;
+      }
+
+      .information{
         display: flex;
         justify-content: center;
+        gap: 3em;
+        margin: 20px 0;
+        
+        p{
+          color: white;
+          font-size: 1.4em;
 
-        img {
-          width: 30%;
+          a{
+            color: white;
+            text-decoration: none;
+          }
         }
       }
 
-      h1 {
-        font-size: 25px;
+      .button-1{
+        color: #ef8451;
+        border: 1px solid #ef8451;
+        background-color: transparent;
+        padding: 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: #ef8451;
+          color: #fff;
+          transition: 0.5s;
+        }
       }
+
+      .button-2{
+        color: #fff;
+        border: 1px solid white;
+        background-color: #093532;
+        padding: 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-left: 3em;
+
+        &:hover {
+          background-color: white;
+          color: #093532;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #666;
+  background-color: black;
+  font-size: 20px;
+
+  a{
+    text-decoration: none;
+    color: #666;
+    margin: 0 10px;
+    
+    i{
+      font-size: 20px;
     }
   }
 }
