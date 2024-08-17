@@ -25,14 +25,24 @@ body::-webkit-scrollbar-thumb {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
-nav {
-  position: fixed;
-  background-color: #fff;
+#preloader {
+  background: #fff url("/public/830.gif") no-repeat center center;
+  height: 100vh;
   width: 100%;
-  top: 0;
+  position: fixed;
   z-index: 1000;
 }
+
+nav {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
 nav .navbar-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -223,7 +233,8 @@ nav .navbar-container .button a.button-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-  margin: 2em 0;
+  width: 75%;
+  margin: auto;
 }
 #home .introduction-content .content {
   background-color: white;
@@ -240,4 +251,207 @@ nav .navbar-container .button a.button-2 {
 }
 #home .introduction-content .content h1 {
   font-size: 25px;
+}
+#home .info-container {
+  margin: auto;
+  width: 75%;
+}
+#home .info-container .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home .info-container div {
+  text-align: center;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+}
+#home .info-container div h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #0f393b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#home .info-container div p {
+  color: #ef8451;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+#home .contact-container {
+  margin: 20px auto;
+  width: 75%;
+  background-color: #f2ebe4;
+  padding: 20px;
+  border: 1px solid #f2ebe4;
+  border-radius: 20px;
+}
+#home .contact-container .contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+#home .contact-container .contact-content .contact-text {
+  margin: 10px;
+  position: relative;
+}
+#home .contact-container .contact-content .contact-text p {
+  color: #ef8451;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#home .contact-container .contact-content .contact-text h1 {
+  font-size: 50px;
+  margin: -0.3em 0;
+  font-weight: 500;
+  color: #093532;
+  line-height: 1.15em;
+}
+#home .contact-container .contact-content .contact-text h5 {
+  color: #0F393B;
+  line-height: 1.8em;
+  font-size: 100%;
+  text-align: justify;
+}
+#home .contact-container .contact-content .contact-form {
+  background-color: white;
+  margin: 10px;
+  padding: 20px 20px 60px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+#home .contact-container .contact-content .contact-form .form-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+#home .contact-container .contact-content .contact-form .form-group input {
+  color: #6b8483;
+  background-color: #f5f3ee;
+  border: 1px solid #f5f3ee;
+  padding: 10px;
+  width: 95%;
+  border-radius: 10px;
+  outline: none;
+}
+#home .contact-container .contact-content .contact-form .form-group input:focus {
+  background-color: white;
+  border: 1px solid #ef8451;
+}
+#home .contact-container .contact-content .contact-form .form-group textarea {
+  color: #6b8483;
+  background-color: #f5f3ee;
+  border: 1px solid #f5f3ee;
+  padding: 10px;
+  width: 95%;
+  border-radius: 10px;
+  outline: none;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+  resize: none;
+}
+#home .contact-container .contact-content .contact-form .form-group textarea:focus {
+  background-color: white;
+  border: 1px solid #ef8451;
+}
+#home .contact-container .contact-content .contact-form button {
+  position: absolute;
+  right: 0;
+  border: 1px solid #ef8451;
+  background-color: #ef8451;
+  color: #fff;
+  margin: 5px 20px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#home .contact-container .contact-content .contact-form button:hover {
+  background-color: transparent;
+  color: #ef8451;
+  transition: 0.5s;
+}
+#home .footer-container {
+  background-color: #093532;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+  margin-top: 3em;
+}
+#home .footer-container .footer-content {
+  text-align: center;
+  padding: 50px 0;
+  margin: auto;
+  width: 70%;
+}
+#home .footer-container .footer-content h1 {
+  color: white;
+  font-size: 50px;
+  line-height: 1.15em;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.1em;
+}
+#home .footer-container .footer-content .information {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin: 20px 0;
+}
+#home .footer-container .footer-content .information p {
+  color: white;
+  font-size: 1.4em;
+}
+#home .footer-container .footer-content .information p a {
+  color: white;
+  text-decoration: none;
+}
+#home .footer-container .footer-content .button-1 {
+  color: #ef8451;
+  border: 1px solid #ef8451;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#home .footer-container .footer-content .button-1:hover {
+  background-color: #ef8451;
+  color: #fff;
+  transition: 0.5s;
+}
+#home .footer-container .footer-content .button-2 {
+  color: #fff;
+  border: 1px solid white;
+  background-color: #093532;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 3em;
+}
+#home .footer-container .footer-content .button-2:hover {
+  background-color: white;
+  color: #093532;
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #666;
+  background-color: black;
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #666;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #2ea2cc;
+}
+footer a i {
+  font-size: 20px;
 }/*# sourceMappingURL=fiture.css.map */

@@ -18,9 +18,21 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Myeongjo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/1c59cf9cb0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
+      <div id="preloader"></div>
       <div class="navbar-container">
         <a href="../index.html"
           ><img src="../public/absenku-removebg-preview.png" alt="Absenku"
@@ -73,50 +85,126 @@
               <button>Get In Touch</button>
             </div>
           </div>
-          <div class="introduction-content">
-            <div class="content">
-              <div class="image">
-                <img src="/public/attendance.png" alt="" />
-              </div>
-              <h1>Presensi/Absensi Digital</h1>
-              <p>
-                Mahasiswa bisa absen di lokasi yang telah disetujui melalui
-                handphone. Cukup selfie, bebas terkontaminasi!
-              </p>
-            </div>
-            <div class="content">
-              <div class="image">
-                <img src="/public/calendar.png" alt="" />
-              </div>
-              <h1>Client Visit</h1>
-              <p>
-                Tim sales dan karyawan lapangan mencatat jadwal kegiatan
-                kunjungan klien secara real-time, semakin mudah pantau manajemen
-                waktu karyawan.
-              </p>
-            </div>
-            <div class="content">
-              <div class="image">
-                <img src="/public/attendance (1).png" alt="" />
-              </div>
-              <h1>Timesheet Online</h1>
-              <p>
-                Karyawan dapat mencatat daftar pekerjaan harian di handphone dan
-                Anda dapat memantau produktivitas mereka.
-              </p>
-            </div>
+        </div>
+      </section>
+      <section class="introduction-content">
+        <div class="content">
+          <div class="image">
+            <img src="/public/attendance.png" alt="" />
+          </div>
+          <h1>Presensi/Absensi Digital</h1>
+          <p>
+            Mahasiswa bisa absen di lokasi yang telah disetujui melalui
+            handphone. Cukup selfie, bebas terkontaminasi!
+          </p>
+        </div>
+        <div class="content">
+          <div class="image">
+            <img src="/public/calendar.png" alt="" />
+          </div>
+          <h1>Client Visit</h1>
+          <p>
+            Tim sales dan karyawan lapangan mencatat jadwal kegiatan kunjungan
+            klien secara real-time, semakin mudah pantau manajemen waktu
+            karyawan.
+          </p>
+        </div>
+        <div class="content">
+          <div class="image">
+            <img src="/public/attendance (1).png" alt="" />
+          </div>
+          <h1>Timesheet Online</h1>
+          <p>
+            Karyawan dapat mencatat daftar pekerjaan harian di handphone dan
+            Anda dapat memantau produktivitas mereka.
+          </p>
+        </div>
+      </section>
+      <section class="info-container">
+        <div class="content">
+          <div>
+            <h1>800K+</h1>
+            <p>DOLLARS RAISED</p>
+          </div>
+          <div>
+            <h1>89</h1>
+            <p>VOLUNTEERS</p>
+          </div>
+          <div>
+            <h1>12+</h1>
+            <p>CITIES</p>
+          </div>
+          <div>
+            <h1>250</h1>
+            <p>STAFF</p>
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <div>
-              <h1></h1>
-            </div>
+      <section class="contact-container">
+        <div class="contact-content">
+          <div class="contact-text">
+            <p>contact</p>
+            <h1>Contact us to get started</h1>
+            <h5>
+              Praesent sapien lacus, molestie vitae arcu in, elementum congue
+              justo. Aenean aliquam semper velit eu pretium. Suspendisse mattis
+              luctus quam nec vehicula. Donec scelerisque tristique metus a
+              vestibulum.
+            </h5>
+          </div>
+          <div class="contact-form">
+            <form action="#">
+              <div class="form-group" for="Name">
+                <input type="text" name="Name" placeholder="Nama Lengkap" />
+              </div>
+              <div class="form-group" for="email">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div class="form-group" for="message">
+                <textarea
+                  id="komentar"
+                  name="komentar"
+                  rows="7"
+                  cols="50"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer-container">
+        <div class="footer-content">
+          <h1>
+            Join our mission. Volunteer, Donate, Advocate. Get Started Today.
+          </h1>
+          <div class="information">
+            <p>
+              Email:
+              <a href="">sasakihaise985@gmail.com</a>
+            </p>
+            <p>
+              No hp:
+              <a href="wa.me/6281380817301">0813-8081-7301</a>
+            </p>
+          </div>
+          <div class="button">
+            <button class="button-1">Browser Campaigns</button>
+            <button class="button-2">Get Involved</button>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <p>© 2022 Absenku. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+    <script src="../src/js/loader.js"></script>
   </body>
 </html>
