@@ -312,109 +312,109 @@ nav {
     }
   }
 
-  .contact-container {
-    margin: 20px auto;
-    width: 75%;
-    background-color: #f2ebe4;
-    padding: 20px;
-    border: 1px solid #f2ebe4;
-    border-radius: 20px;
+    .contact-container {
+      margin: 20px auto;
+      width: 75%;
+      background-color: #f2ebe4;
+      padding: 20px;
+      border: 1px solid #f2ebe4;
+      border-radius: 20px;
 
-    .contact-content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1em;
+      .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
 
-      .contact-text {
-        margin: 10px;
-        position: relative;
+        .contact-text {
+          margin: 10px;
+          position: relative;
 
-        p {
-          color: #ef8451;
-          text-transform: uppercase;
-          font-weight: 700;
-        }
-
-        h1 {
-          font-size: 50px;
-          margin: -0.3em 0;
-          font-weight: 500;
-          color: #093532;
-          line-height: 1.15em;
-        }
-
-        h5{
-          color: #0F393B;
-          line-height: 1.8em;
-          font-size: 100%;
-          text-align: justify;
-        }
-      }
-      .contact-form {
-        background-color: white;
-        margin: 10px;
-        padding: 20px 20px 60px 20px;
-        border-radius: 20px;
-        position: relative;
-
-        .form-group {
-          margin-bottom: 10px;
-          width: 100%;
-
-          input {
-            color: #6b8483;
-            background-color: #f5f3ee;
-            border: 1px solid #f5f3ee;
-            padding: 10px;
-            width: 95%;
-            border-radius: 10px;
-            outline: none;
-
-            &:focus {
-              background-color: white;
-              border: 1px solid #ef8451;
-            }
-          }
-
-          textarea {
-            color: #6b8483;
-            background-color: #f5f3ee;
-            border: 1px solid #f5f3ee;
-            padding: 10px;
-            width: 95%;
-            border-radius: 10px;
-            outline: none;
-            font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
-            resize: none;
-
-            &:focus {
-              background-color: white;
-              border: 1px solid #ef8451;
-            }
-          }
-        }
-        button {
-          position: absolute;
-          right: 0;
-          border: 1px solid #ef8451;
-          background-color: #ef8451;
-          color: #fff;
-          margin: 5px 20px;
-          padding: 10px;
-          border-radius: 90px;
-          cursor: pointer;
-          font-size: 15px;
-          text-transform: uppercase;
-
-          &:hover {
-            background-color: transparent;
+          p {
             color: #ef8451;
-            transition: 0.5s;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+
+          h1 {
+            font-size: 50px;
+            margin: -0.3em 0;
+            font-weight: 500;
+            color: #093532;
+            line-height: 1.15em;
+          }
+
+          h5{
+            color: #0F393B;
+            line-height: 1.8em;
+            font-size: 100%;
+            text-align: justify;
+          }
+        }
+        .contact-form {
+          background-color: white;
+          margin: 10px;
+          padding: 20px 20px 60px 20px;
+          border-radius: 20px;
+          position: relative;
+
+          .form-group {
+            margin-bottom: 10px;
+            width: 100%;
+
+            input {
+              color: #6b8483;
+              background-color: #f5f3ee;
+              border: 1px solid #f5f3ee;
+              padding: 10px;
+              width: 95%;
+              border-radius: 10px;
+              outline: none;
+
+              &:focus {
+                background-color: white;
+                border: 1px solid #ef8451;
+              }
+            }
+
+            textarea {
+              color: #6b8483;
+              background-color: #f5f3ee;
+              border: 1px solid #f5f3ee;
+              padding: 10px;
+              width: 95%;
+              border-radius: 10px;
+              outline: none;
+              font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+              resize: none;
+
+              &:focus {
+                background-color: white;
+                border: 1px solid #ef8451;
+              }
+            }
+          }
+          button {
+            position: absolute;
+            right: 0;
+            border: 1px solid #ef8451;
+            background-color: #ef8451;
+            color: #fff;
+            margin: 5px 20px;
+            padding: 10px;
+            border-radius: 90px;
+            cursor: pointer;
+            font-size: 15px;
+            text-transform: uppercase;
+
+            &:hover {
+              background-color: transparent;
+              color: #ef8451;
+              transition: 0.5s;
+            }
           }
         }
       }
     }
-  }
 
   .footer-container {
     background-color: #093532;
